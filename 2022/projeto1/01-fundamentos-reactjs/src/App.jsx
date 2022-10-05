@@ -19,7 +19,7 @@ const posts = [
       { type: 'paragraph', content: 'Acabou de sair mais um projeto para o meu portifólio' },
       { type: 'link', content: 'www.google.com' },
     ],
-    publishedAt: new Date('2022-10-05 20:00')
+    publishedAt: new Date('2022-10-04 20:10')
   },
   {
     id: 2,
@@ -30,11 +30,11 @@ const posts = [
     },
     content: [
 
-      { type: 'paragraph', content: 'Fala Galeraaa' },
-      { type: 'paragraph', content: 'Acabou de sair mais um projeto para o meu portifólio' },
-      { type: 'link', content: 'www.google.com' },
+      { type: 'paragraph', content: 'Fala Dev' },
+      { type: 'paragraph', content: 'Essa semana começa um novo projeto no NLW' },
+      { type: 'link', content: 'www.rocketseat.com' },
     ],
-    publishedAt: new Date('2022-10-06 19:00:00')
+    publishedAt: new Date('2022-10-05 07:55:00')
   }
 ]
 
