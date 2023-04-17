@@ -15,7 +15,7 @@ export async function transactionsRoutes(app: FastifyInstance) {
     return { transactions }
   })
 
-  app.get('/home', { preHandler: [checkSessionIdExists] }, async (request) => {
+  app.get('/home', async (request) => {
     return { status: 'Server Online' }
   })
 
