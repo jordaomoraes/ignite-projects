@@ -15,6 +15,10 @@ export async function transactionsRoutes(app: FastifyInstance) {
     return { transactions }
   })
 
+  app.get('/home', { preHandler: [checkSessionIdExists] }, async (request) => {
+    return { status: 'Server Online' }
+  })
+
   app.get('/:id', { preHandler: [checkSessionIdExists] }, async (request) => {
     const getTransactionParamsSchema = z.object({
       id: z.string().uuid(),
