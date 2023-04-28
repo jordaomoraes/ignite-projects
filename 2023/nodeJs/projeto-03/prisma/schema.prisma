@@ -16,7 +16,7 @@ model User {
   email         String    @unique
   password_hash String    @default("")
   created_at    DateTime  @default(now())
-  checkIns      CheckIN[] //coluna nao salvar, por isso o KamelCase
+  checkIns      CheckIN[] //coluna nao salva, por isso o KamelCase
 
   @@map("users")
 }
