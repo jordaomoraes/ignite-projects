@@ -27,7 +27,7 @@ describe("Authenticate Use Case", () => {
   });
 
   it("nao deve ser possivel um cadastro com email que não existe", async () => {
-    expect(() =>
+    await expect(() =>
       sut.execute({
         email: "fulano@gmail.com",
         password: "123456",
@@ -42,7 +42,7 @@ describe("Authenticate Use Case", () => {
       password_hash: await hash("123456", 6),
     });
 
-    expect(() =>
+    await expect(() =>
       sut.execute({
         email: "fulano@gmail.com",
         password: "123123",
